@@ -72,6 +72,7 @@ a {
   transform: translate(-50%, 50%);
   animation: flutuar 3s ease-in-out infinite;
   opacity: 0.45;
+  width: 20%;
 }
 
 .image-1:hover{
