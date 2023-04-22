@@ -47,7 +47,7 @@ html, body {
   vertical-align: baseline;
   width: auto;
   left: 48%;
-  bottom: 200px;
+  bottom: 20%;
 
 }
 
@@ -69,6 +69,7 @@ html, body {
 
 .image-1 {
   position: relative;
+  left: 0%;
   animation: flutuar 3s ease-in-out infinite;
   opacity: 45%;
 }
@@ -84,26 +85,6 @@ html, body {
   opacity: 75%;
 }
 
-.pausetxt{
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: absolute;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
-  left: 47%;
-  bottom: 200px;
-  top: 47%;
-}
 @keyframes flutuar {
   0% {
     transform: translate(0, 0);
