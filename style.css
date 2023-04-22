@@ -23,7 +23,7 @@ a {
 /* Botão flutuante */
 .button-1 {
   position: fixed;
-  bottom: 20%;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   align-items: center;
@@ -67,6 +67,7 @@ a {
 .image-1 {
   position: absolute;
   bottom: 50%;
+  top: 20%;
   left: 0%;
   transform: translate(-50%, 50%);
   animation: flutuar 3s ease-in-out infinite;
