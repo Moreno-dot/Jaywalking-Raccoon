@@ -17,9 +17,14 @@ let playerScore = 0;
       yAtor += 2;
       }
     } if (keyIsDown(LEFT_ARROW) || keyIsDown(65)){
+      if (canMoveLeft()){
       xAtor -= 2;
+      }
     } if (keyIsDown(RIGHT_ARROW) || keyIsDown(68)){
+      if (canMoveRight()){
       xAtor += 2;
+      console.log(xAtor);
+      }
     }
   } 
   }
@@ -64,4 +69,12 @@ let playerScore = 0;
 
   function canMoveDown(){
     return yAtor < 366;
+  }
+
+  function canMoveLeft(){
+    return xAtor > 0;
+  }
+
+  function canMoveRight(){
+    return xAtor < 473;
   }

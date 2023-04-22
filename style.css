@@ -1,25 +1,31 @@
+/* Estilos padrão */
 html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #454545;
-  }
-  canvas {
-    display: block;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border: 2px dotted #FF6000;
-  }
-  
-  a {
-    text-decoration: none;
-   }
+  margin: 0;
+  padding: 0;
+  background-color: #454545;
+}
 
-/* CSS */
+canvas {
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 2px dotted #FF6000;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Botão flutuante */
 .button-1 {
+  position: fixed;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
   align-items: center;
   background-clip: padding-box;
   background-color: #FF6000;
@@ -30,7 +36,6 @@ html, body {
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
@@ -38,7 +43,6 @@ html, body {
   margin: 0;
   min-height: 3rem;
   padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: absolute;
   text-decoration: none;
   transition: all 250ms;
   user-select: none;
@@ -46,9 +50,6 @@ html, body {
   touch-action: manipulation;
   vertical-align: baseline;
   width: auto;
-  left: 48%;
-  bottom: 20%;
-
 }
 
 .button-1:hover,
@@ -57,32 +58,30 @@ html, body {
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
-.button-1:hover {
-  transform: translateY(-1px);
-}
-
 .button-1:active {
   background-color: #FF6000;
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-  transform: translateY(0);
 }
 
+/* Imagem flutuante */
 .image-1 {
-  position: relative;
+  position: absolute;
+  bottom: 50%;
   left: 0%;
+  transform: translate(-50%, 50%);
   animation: flutuar 3s ease-in-out infinite;
-  opacity: 45%;
+  opacity: 0.45;
 }
 
 .image-1:hover{
-  opacity: 100%;
-  scale: 105%;
+  opacity: 1;
+  transform: scale(1.05);
   cursor: pointer;
 }
 
 .image-1:active {
-  scale: 95%;
-  opacity: 75%;
+  transform: scale(0.95);
+  opacity: 0.75;
 }
 
 @keyframes flutuar {
@@ -97,8 +96,7 @@ html, body {
   }
 }
 
-/*Barra flutuante */
-
+/* Barra flutuante */
 .floating-bar {
   position: fixed;
   bottom: 50px;
