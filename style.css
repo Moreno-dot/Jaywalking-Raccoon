@@ -1,0 +1,152 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #454545;
+  }
+  canvas {
+    display: block;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px dotted #FF6000;
+  }
+  
+  a {
+    text-decoration: none;
+   }
+
+/* CSS */
+.button-1 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #FF6000;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: absolute;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  left: 48%;
+  bottom: 200px;
+
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-1:hover {
+  transform: translateY(-1px);
+}
+
+.button-1:active {
+  background-color: #FF6000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.image-1 {
+  position: relative;
+  animation: flutuar 3s ease-in-out infinite;
+  opacity: 45%;
+}
+
+.image-1:hover{
+  opacity: 100%;
+  scale: 105%;
+  cursor: pointer;
+}
+
+.image-1:active {
+  scale: 95%;
+  opacity: 75%;
+}
+
+.pausetxt{
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: absolute;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  left: 47%;
+  bottom: 200px;
+  top: 47%;
+}
+@keyframes flutuar {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/*Barra flutuante */
+
+.floating-bar {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 9999;
+  animation: floating 5s infinite ease-in-out alternate;
+}
+
+.floating-button {
+  width: 50px;
+  height: 50px;
+  background-color: #FF6000;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.floating-button i {
+  color: #fff;
+  font-size: 24px;
+}
+
+.floating-button:hover {
+  transform: scale(1.1);
+}
